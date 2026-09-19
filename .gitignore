@@ -6,5 +6,8 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Ticket 4 asks you to add two more entries here, with a comment above each
-# saying why. Read the ones above first: each says WHY, not just WHAT.
+# Environment files containing secret API keys and credentials that must never be shared or exposed
+.env
+
+# Third-party dependencies that can be reinstalled locally and bloat the repository history
+node_modules/

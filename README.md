@@ -66,3 +66,9 @@ the exercise for you.
 
 (If you are an engineer auditing the templates: this is not the thin-template gap that DZ-382
 fixed elsewhere. It is a decision, recorded here so it does not get "fixed".)
+
+## What .gitignore is for and why committed secrets are permanent
+
+A `.gitignore` file tells Git which files and folders to ignore so they aren't accidentally tracked in version control, such as environment files, build artifacts, and system-specific files.
+
+Deleting a secret in a later commit does not fix an accidental leak because Git keeps a complete history of every commit, meaning anyone with repository access can still view the secret in previous commits.
